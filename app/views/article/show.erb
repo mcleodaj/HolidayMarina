@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>
+    <%= @article.title.capitalize%>
+  </h1>
+  <p>
+    Description: <%= @article.description %><br><br>
+    Price: <%= @article.price %><br><br>
+    E-mail: <%=@article.email %><br><br>
+    <a href="/category/<%=@category.id%>"><< Go Back</a><br>
+    <a href="/"> Main Menu >></a>
+  </p>
+</div>

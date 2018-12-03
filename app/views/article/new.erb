@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>
+    Create new Listing
+  </h1>
+  <form action="/category/<%=@category.id%>/article" method="POST">
+    <p>
+      Title: <input type="text" name="title"><br><br>
+      Description:<input type="text" name="description"><br><br>
+      Price: <input type="number" name="price"><br><br>
+      E-mail: <input type="text" name="email"><br><br>
+    </p>
+    <input type="submit" value="Submit">
+  </form>
+</div>

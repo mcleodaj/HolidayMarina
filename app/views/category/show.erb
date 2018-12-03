@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>
+    <%= @category.name.capitalize%>
+  </h1>
+  <p>
+    Select an item below
+  </p>
+  <% @category.articles.each do |article|%>
+  <p>
+    + <a href="/category/<%=@category.id%>/article/<%=article.id%>"><%= article.title %></a>
+  </p>
+  <% end %>
+  <h3>
+    <a href="/"><< Go back</a>
+  </h3>
+  <p>
+    <a href="/category/<%=@category.id%>/article/new">Create Post</a>
+  </p>
+</div>
