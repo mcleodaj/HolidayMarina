@@ -76,3 +76,17 @@ body {
 .grey-back {
   background-color: grey; 
 }
+
+.t-m {
+  font-size: 1.25em;
+}
+
+.cover-space {
+  padding-top: 7rem!important;
+  padding-bottom: 7rem!important;
+}
+
+.border-2 {
+    border-width:2rem !important;
+}
+

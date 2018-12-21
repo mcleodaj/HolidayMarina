@@ -1,91 +1,118 @@
  <!-- <div class="py-5 text-66center text-white h-100 align-items-center d-flex full-img" style="background-image: url('/imgs/Marina_Pics/Top_Down/6734CEB5CD2BF793CB0F85372C3E612B.png')" > -->
-<div class="text-center align-items-center d-flex full-img py-10 h-80" style="background-image: url('/imgs/Marina_Pics/Top_Down/6734CEB5CD2BF793CB0F85372C3E612B.png')">
-    <div class="py-5 container-fluid">
-      <div class="row">
-        <div class="col-md-8 mx-auto"> <i class="d-block fa fa-stop-circle mb-3 text-muted fa-5x"></i>
-          <h1 class="display-3 mb-4 text-white">Holiday Marina</h1>
-          <p class="lead mb-5 text-light">Lake Norman's Premier Boat Storage Facility</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-0" style="">
-    <div class="container-fluid p-0">
-      <div class="row m-2">
-        <div class="col-md-6 d-none d-md-block p-0">
-          <div class="row">
-            <div class="col-md-6 pr-2"><img class="d-block img-fluid" src="/imgs/hello_sailor.jpg"></div>
-            <div class="col-md-6 px-2">
-              <p class="lead">Blurb about hello sailor goes here with a link to the site</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 text-center full-img vert-center m-0 p-0" style="background-image: url('/imgs/Marina_Pics/Gas_dock/Gas_pump_cleaner@0,25x.png');">
-          <h1 class="display-4">Today's Gas Price:<br></h1>
-          <h1 class="display-4">$<%= @gas_price %></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 p-0">
-          <a class="weatherwidget-io" href="https://forecast7.com/en/35d49n80d86/cornelius/?unit=us" data-label_1="HOLIDAY MARINA" data-label_2="WEATHER" data-days="5" data-theme="original" data-basecolor="#003366" data-suncolor="#E2970B" data-cloudfill="#003366" >HOLIDAY MARINA WEATHER</a>
-        </div>
-      </div>
-      <div class="row m-2">
-      	<div class="col-md-4 col-sm-12 full-img p-3" style="background-image: url('/imgs/Marina_Pics/Inside_view/Inside_view@0,25x.png')">
-      		<div class="row">
-		        <div class="col-md-6 text-white">
-		          <h1>Hours:</h1>
-		          <p class="lead">Mon: <%= @hours["mon"] %></p>
-		          <p class="lead">Tues: <%= @hours["tues"] %></p>
-		          <p class="lead">Wed: <%= @hours["wed"]%></p>
-		          <p class="lead">Thurs: <%= @hours["thurs"]%></p>
-		          <p class="lead">Fri: <%= @hours["fri"]%></p>
-		          <p class="lead">Sat: <%= @hours["sat"]%></p>
-		          <p class="lead">Sun: <%= @hours["sun"]%></p>
-		        </div>
-		        <div class="col-md-6 text-right text-white">
-		          <h1>Amenities:</h1>
-		          <p class="lead">Amenities</p>
-		        </div>
-		    </div>
-	    </div>
-        <!-- <div class="col-md-3"><img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-1.svg"></div> -->
-        <div class="col-md-4 p-2">
-          <a href="https://maps.google.com?daddr=20139+Henderson+Rd+Cornelius+NC+28031"><img class="d-block img-fluid" src="/imgs/map.png"></a>
-        </div>
-        <div class="col-md-3 p-2">
-          <h1 class="display-3">Graphic Map</h1>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center py-3">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="mx-auto col-md-12">
-          <h1 class="mb-3">Meet&nbsp;the team</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg" width="100" alt="Card image cap">
-          <h4> <b>Al</b></h4>
-          <p>Manager</p>
-          <p class="mb-0"> <i>"I throw myself down among the tall grass by the trickling"</i> </p>
-        </div>
-        <div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg" width="100" alt="Card image cap">
-          <h4> <b>Mat</b></h4>
-          <p>Manager</p>
-          <p class="mb-0"> <i>"As I lie close to the earth, a thousand unknown plants"</i> </p>
-        </div>
-        <div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg" width="100">
-          <h4> <b>Pat</b></h4>
-          <p>Assistant Manger</p>
-          <p class="mb-0"> <i>"Then, my friend, when darkness overspreads my eyes"</i> </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+ 	<div class="text-center align-items-center d-flex full-img cover-space h-80" style="background-image: linear-gradient(150deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Top_Down/6734CEB5CD2BF793CB0F85372C3E612B.png')">
+ 		<div class="py-5 container-fluid">
+ 			<div class="row">
+ 				<div class="col-md-8 mx-auto"> 
+ 					<img class="d-block img-fluid mx-auto" src="/imgs/Marina_Pics/Icons/200w.png" >
+ 					<h1 class="display-3 mb-4 text-white">Holiday Marina</h1>
+ 					<h4 class="mb-5 text-light">Lake Norman's premier Boat Storage Facility</h4>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="py-0" style="">
+ 		<div class="container-fluid p-0">
+ 			<div class="row m-2">
+ 				<div class="col-md-7 d-none d-md-block p-0">
+ 					<div class="row m-0">
+ 						<div class="col-md-4 p-0 h-100"><img class="d-block img-fluid" src="/imgs/hello_sailor.jpg"></div>
+ 						<div class="col-md-8 px-0">
+ 							<div class="row  h-50 m-0">
+ 								<div class="col-md-12 h-50">
+		 							<p class="lead">Blurb about hello sailor goes here with a link to the site</p>
+ 								</div>
+ 							</div>
+ 							<div class="row  h-50 m-0">
+ 								<div class="col-md-6 p-0 border border-2 border-bottom-0 border-white" style="background-image: url(/imgs/Marina_Pics/front_diag/front_diag_half.jpg);">
+ 								</div>
+ 								<div class="col-md-6 p-0 border border-2 border-bottom-0 border-white" style="background-image: url(/imgs/Marina_Pics/front_diag/front_diag_half.jpg);">
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="col-md-5 text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/Gas_pump_cleaner@0,25x.png');">
+ 					<div class="py-5 container-fluid">
+			 			<div class="row">
+			 				<div class="col-md-8 mx-auto"> 
+			 					<h1 class="display-45 text-white">Today's Gas Price:<br></h1>
+			 					<h1 class="display-4 text-white">$<%= @gas_price %></h1>
+			 				</div>
+			 			</div>
+			 		</div>
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-md-12 p-0">
+ 					<a class="weatherwidget-io" href="https://forecast7.com/en/35d49n80d86/cornelius/?unit=us" data-label_1="HOLIDAY MARINA" data-label_2="WEATHER" data-days="5" data-theme="original" data-basecolor="#003366" data-suncolor="#E2970B" data-cloudfill="#003366" >HOLIDAY MARINA WEATHER</a>
+ 				</div>
+ 			</div>
+ 			<div class="row m-2">
+<!--  				<div class="col-md-4 col-sm-12 full-img p-3" style="background-image: url('/imgs/Marina_Pics/Inside_view/Inside_view@0,25x.png')">
+ 					<div class="row"> -->
+ 						<div class="col-md-2">
+ 							<h2>Hours:</h2>
+ 							<p class="lead">Mon: <%= @hours["mon"] %></p>
+ 							<p class="lead">Tues: <%= @hours["tues"] %></p>
+ 							<p class="lead">Wed: <%= @hours["wed"]%></p>
+ 							<p class="lead">Thurs: <%= @hours["thurs"]%></p>
+ 							<p class="lead">Fri: <%= @hours["fri"]%></p>
+ 							<p class="lead">Sat: <%= @hours["sat"]%></p>
+ 							<p class="lead">Sun: <%= @hours["sun"]%></p>
+ 						</div>
+ 				<div class="col-md-5 p-0">
+ 					<a href="https://maps.google.com?daddr=20139+Henderson+Rd+Cornelius+NC+28031"><img class="d-block img-fluid" src="/imgs/map.png"></a>
+ 				</div>
+ 				<div class="col-md-3 p-2">
+ 					<h1 class="display-3">Graphic Map</h1>
+ 				</div>
+				<div class="col-md-2 text-right">
+					<h2>Amenities:</h2>
+					<ul class="list-unstyled"> 
+						<p>Service Shop<br>
+						Gas Docks<br>
+						Bath House<br>
+						Designated Wet Slip Parking<br>
+						Golf Cart Valet<br>
+						Private Boat Ramp<br>
+						Hull Cleaning<br>
+						Haul Outs<br>
+						Jet Ski Slips<br>
+						Gazebo Area<br>
+						Grill Area<br>
+						Hello, Sailor Restaurant</p>
+					</ul>
+				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <div class="text-center py-0">
+ 	<div class="container-fluid">
+ 		<div class="row" style=" background-image: linear-gradient(to bottom, #003366, #003366);">
+ 			<div class="mx-auto col-md-12 py-2">
+ 				<h1 class="my-3 text-white">Meet&nbsp;the Team</h1>
+ 			</div>
+ 		</div>
+ 		<div class="row">
+ 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg" width="100" alt="Card image cap">
+ 				<h4> <b>Al</b></h4>
+ 				<p>Manager</p>
+ 				<p class="mb-0"> <i>"I throw myself down among the tall grass by the trickling"</i> </p>
+ 			</div>
+ 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg" width="100" alt="Card image cap">
+ 				<h4> <b>Mat</b></h4>
+ 				<p>Manager</p>
+ 				<p class="mb-0"> <i>"As I lie close to the earth, a thousand unknown plants"</i> </p>
+ 			</div>
+ 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg" width="100">
+ 				<h4> <b>Pat</b></h4>
+ 				<p>Assistant Manger</p>
+ 				<p class="mb-0"> <i>"Then, my friend, when darkness overspreads my eyes"</i> </p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <script>
+ 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+ </script>
