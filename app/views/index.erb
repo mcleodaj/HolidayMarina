@@ -13,7 +13,17 @@
  	<div class="py-0" style="">
  		<div class="container-fluid p-0">
  			<div class="row m-2 row-flex">
- 				<div class="col-lg-4 col-md-12 full-img p-3" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.4) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Inside_view/800.png')">
+ 				<div class="col-sm-12 d-md-none text-black text-center">
+ 							<h2>Hours:</h2>
+ 							<p class="lead">Mon: <%= @hours["mon"] %><br>
+ 							Tues: <%= @hours["tues"] %><br>
+ 							Wed: <%= @hours["wed"]%><br>
+ 							Thurs: <%= @hours["thurs"]%><br>
+ 							Fri: <%= @hours["fri"]%><br>
+ 							Sat: <%= @hours["sat"]%><br>
+ 							Sun: <%= @hours["sun"]%></p>
+ 				</div>
+ 				<div class="col-lg-4 col-md-12 d-none d-md-block full-img p-3" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.4) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Inside_view/800.png')">
  					<div class="row">
  						<div class="col-md-6 text-white">
  							<h2>Hours:</h2>
@@ -44,42 +54,70 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-5 px-2 full-img-top" style="background-origin: content-box; background-image: url('/imgs/Marina_Pics/Map Graphics/1x/Artboard 1.png')">
+				<div class="col-lg-3 d-none d-lg-block px-2 full-img-top" style="background-origin: content-box; background-image: url('/imgs/Marina_Pics/Map Graphics/1x/Artboard 1.png')">
  					<a href="/map"><span></span></a>
  				</div>
- 				<div class="col-lg-5 col-md-7 text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
+ 				<div class="col-lg-5 d-none d-lg-block text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
  					<div class="py-5 container-fluid">
 			 			<div class="row">
 			 				<div class="col-md-8 mx-auto"> 
-			 					<h1 class="display-45 text-white">Today's Gas Price:<br></h1>
+			 					<h1 class="display-4 text-white">Today's Gas Price:<br></h1>
 			 					<h1 class="display-4 text-white">$<%= @gas_price %></h1>
 			 				</div>
 			 			</div>
 			 		</div>
  				</div>
  			</div>
+ 			<div class="container-fluid p-0 d-lg-none">
+	 			<div class="row m-2 row-flex">
+	 				<div class="col-md-5 pr-2 pl-0 full-img-top d-lg-none d-none d-md-block" style="background-origin: content-box; background-image: url('/imgs/Marina_Pics/Map Graphics/1x/Artboard 1.png')">
+ 					<a href="/map"><span></span></a>
+ 				</div>
+ 				<div class="col-md-7 text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
+ 					<div class="py-5 container-fluid">
+			 			<div class="row">
+			 				<div class="col-md-8 mx-auto"> 
+			 					<h1 class="display-4 text-white">Today's Gas Price:<br></h1>
+			 					<h1 class="display-4 text-white">$<%= @gas_price %></h1>
+			 				</div>
+			 			</div>
+			 		</div>
+ 				</div>
+	 			</div>
+	 		</div>
  			<div class="row">
  				<div class="col-md-12 p-0">
  					<a class="weatherwidget-io" href="https://forecast7.com/en/35d49n80d86/cornelius/?unit=us" data-label_1="HOLIDAY MARINA" data-label_2="WEATHER" data-days="5" data-theme="original" data-basecolor="#003366" data-suncolor="#E2970B" data-cloudfill="#003366">HOLIDAY MARINA WEATHER</a>
  				</div>
  			</div>
- 			<div class="row m-2 mh-400 oh">
- 				<div class="col-md-7 d-none d-md-block p-0">
+ 			<div class="row m-2 mh-400 oh mih-300">
+ 				<div class="col-lg-5 d-none d-lg-block p-0">
  					<div class="row m-0">
- 						<div class="col-md-4 p-0 h-100"><img class="d-block img-fluid" src="/imgs/hello_sailor.jpg"></div>
- 						<div class="col-md-8 px-0">
- 							<div class="row  h-100 m-0">
- 								<div class="col-md-12 h-50">
-		 							<p class="lead">From the minds of Joe and Katie Kindred, "Hello, Sailor" is located at Holiday Marina. With views of the water, live music, and both indoor and outdoor seating it is a culinary destination for both lake goers and Charlotte natives. They have approximately 20 slips for boats to dock while grabbing food or cocktails.<a href="http://hellosailornc.com/">Visit their website here!</a></p>
- 								</div>
- 							</div>
+ 						<div class="col-lg-6 p-0 h-100"><img class="d-block img-fluid" src="/imgs/hello_sailor.jpg"></div>
+ 						<div class="col-lg-6 px-0 text-center p-2 pt-4">
+							<h3><b>HELLO, SAILOR</b></h3>
+ 							<p class="lead">From the minds of Joe and Katie Kindred, "Hello, Sailor" is located at Holiday Marina. With views of the water, live music, and both indoor and outdoor seating it is a culinary destination for both lake goers and Charlotte natives. They have approximately 20 slips for boats to dock while grabbing food or cocktails.<a href="http://hellosailornc.com/">Visit their website here!</a></p>
  						</div>
  					</div>
  				</div>
- 				<div class="col-md-5 p-0 full-img-top" style="background-origin: content-box; background-image: url('/imgs/map.png')">
+ 				<div class="col-lg-2 d-none d-lg-block px-2 full-img-top" style="background-origin: content-box; background-image: url('/imgs/Marina_Pics/boat_view/400.png')"></div>
+ 				<div class="col-lg-5 col-md-12 p-0 full-img-top" style="background-origin: content-box; background-image: url('/imgs/map.png')">
  					<!-- <a href="https://maps.google.com?daddr=20139+Henderson+Rd+Cornelius+NC+28031"><img class="d-block img-fluid" src="/imgs/map.png"></a> -->
  				</div>
  			</div>
+ 			<div class="container-fluid p-0 d-lg-none d-lg-none d-none d-md-block">
+	 			<div class="row m-2 row-flex">
+	 				<div class="col-md-12 p-0">
+	 					<div class="row m-0">
+	 						<div class="col-md-4 p-0 h-100"><img class="d-block img-fluid" src="/imgs/hello_sailor.jpg"></div>
+	 						<div class="col-md-8 px-3 text-center p-2 pt-4 d-lg-none d-none d-md-block">
+								<h3><b>HELLO, SAILOR</b></h3>
+	 							<p class="lead">From the minds of Joe and Katie Kindred, "Hello, Sailor" is located at Holiday Marina. With views of the water, live music, and both indoor and outdoor seating it is a culinary destination for both lake goers and Charlotte natives. They have approximately 20 slips for boats to dock while grabbing food or cocktails.<a href="http://hellosailornc.com/">Visit their website here!</a></p>
+	 						</div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
  		</div>
  	</div>
  </div>
@@ -106,12 +144,12 @@
  		</div>
  	</div>
  </div>
-  <div class="py-5 text-center text-white" style="	background-image: linear-gradient(to bottom, rgba(211,211,211, .95), rgba(192,192,192, .95));	background-position: top left, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;" >
+  <div class="py-5 text-center text-white" style="	background-image: linear-gradient(to bottom, silver, silver, grey)" >
     <div class="container-fluid">
       <div class="row">
         <div class="mx-auto col-md-10 p-4">
           <h1 class="text-dark">Get In Touch</h1>
-          <p class="mb-4 lead text-dark">Let us help find the best price for you</p>
+          <p class="mb-4 lead text-dark">How Can We Help You?</p>
           <form>
             <div class="form-row">
               <div class="form-group col-md-4"> <input type="text" class="form-control" id="form22" placeholder="Your Name*"> </div>

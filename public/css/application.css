@@ -115,6 +115,28 @@ html, body { overflow-x: hidden; }
   /*overflow: hidden;*/
 }
 
+.mih-300 {
+  min-height: 300px;
+}
+
+.mih-500 {
+  min-height: 500px;
+}
+
 .oh {
   overflow: hidden;
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("/imgs/Marina_Pics/low_far/2000.png");
+
+  /* Set a specific height */
+  height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
