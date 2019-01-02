@@ -7,7 +7,7 @@ get '/' do
   end
 
   d = DateTime.now
-  if d.month >= 10
+  if d.month >= 1
     @hours = {
               'mon' => '8AM - 7PM',
               'tues' => '8AM - 7PM',
@@ -32,11 +32,6 @@ get '/' do
   erb :index
 end
 
-get '/about' do
-
-  erb :about
-end
-
 get '/services' do
 
   erb :services
@@ -55,4 +50,8 @@ end
 get '/contact' do
 
   erb :contact
+end
+
+get '/map' do
+  erb :map, :layout => false
 end
