@@ -14,6 +14,7 @@ gem 'thin'
 gem 'rake'
 
 gem 'shotgun'
+gem 'pony'
 
 group :test do
   gem 'faker'

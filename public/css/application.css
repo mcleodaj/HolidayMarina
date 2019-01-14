@@ -55,7 +55,10 @@ body {
 /*  background-color: #f5f5f5;
 }*/
 
-html, body { overflow-x: hidden; }
+html, body { 
+  overflow-x: hidden; 
+  height: 100%;
+}
 
 .vert-center {
   padding-top: auto%;
@@ -139,4 +142,8 @@ html, body { overflow-x: hidden; }
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nounderline {
+  text-decoration: none !important
 }

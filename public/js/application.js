@@ -4,7 +4,31 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $("#contactForm").submit(function(e) {
+	    
+	    e.preventDefault(); // avoid to execute the actual submit of the form.
 
+	    $("#buttonDiv").html("<div class=\"spinner-border\" role=\"status\"> <span class=\"sr-only\">Loading...</span></div>");
+
+	    var form = $(this);
+	    var url = form.attr('action');
+
+	    $.ajax({
+	           type: "POST",
+	           url: url,
+	           data: form.serialize(), // serializes the form's elements.
+	           success: function (data) {
+	                $("#buttonDiv").html("<h4>Your Message has been Sent!</h4>");
+	                $("[id=toBeRead]").prop('disabled', true);
+	            },
+	            error: function (data) {
+	            	var r = jQuery.parseJSON(data.responseText);
+	                $("#formError").html("<h4 class=\"text-danger\">${r.Message}</h4>");
+	                $("#buttonDiv").html("<button type=\"submit\" class=\"btn btn-outline-dark btn-lg\">Send</button>");
+	            },
+	         });
+
+	});
   
 });
 
@@ -33,44 +57,3 @@ function getRand() {
   var x = getRandomInt(0,5)
   displayImage(x);
 }
-
-// $(document).ready(function() {
-//         // Transition effect for navbar 
-//         $(window).scroll(function() {
-//           // checks if window is scrolled more than 500px, adds/removes solid class
-//           if($(this).scrollTop() > 500) { 
-//               $('.navbar').addClass('solid');
-//           } else {
-//               $('.navbar').removeClass('solid');
-//           }
-//         });
-// });
-
-// $(function () {
-
-//     function initMap() {
-
-//         var location = new google.maps.LatLng(35.4870919, -80.888728);
-
-//         var mapCanvas = document.getElementById('map');
-//         var mapOptions = {
-//             center: location,
-//             zoom: 10,
-//             panControl: false,
-//             disableDefaultUI: true,
-//             mapTypeId: google.maps.MapTypeId.ROADMAP
-//         }
-//         var map = new google.maps.Map(mapCanvas, mapOptions);
-
-//         // var markerImage = '/imgs/marker.png';
-
-//         var marker = new google.maps.Marker({
-//             position: location,
-//             map: map,
-//             // icon: markerImage
-//         });
-
-//     }
-
-//     google.maps.event.addDomListener(window, 'load', initMap);
-//  });
