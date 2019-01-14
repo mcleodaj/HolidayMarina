@@ -24,6 +24,7 @@ GEM
     pg (1.1.3)
     pony (1.12)
       mail (>= 2.0)
+    puma (3.12.0)
     rack (2.0.6)
     rack-protection (2.0.4)
       rack
@@ -72,6 +73,7 @@ DEPENDENCIES
   faker
   pg
   pony
+  puma
   rake
   rspec
   shotgun
