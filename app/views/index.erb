@@ -15,25 +15,23 @@
  			<div class="row m-2 row-flex">
  				<div class="col-sm-12 d-md-none text-black text-center">
  							<h2>Hours:</h2>
- 							<p class="lead">Mon: <%= @hours["mon"] %><br>
- 							Tues: <%= @hours["tues"] %><br>
- 							Wed: <%= @hours["wed"]%><br>
- 							Thurs: <%= @hours["thurs"]%><br>
- 							Fri: <%= @hours["fri"]%><br>
- 							Sat: <%= @hours["sat"]%><br>
- 							Sun: <%= @hours["sun"]%></p>
+ 							<p class="lead">Seasonal Hours:<br>
+							8 AM -5 PM  Monday-Sunday <br>
+							8-4:45 Gas Docks <br>	<br>		 
+							Peak Season:<br> (Memorial-Labor Day)<br>
+							9-7 Monday-Sunday <br>
+							9-6:45 Gas Docks</p>
  				</div>
  				<div class="col-lg-4 col-md-12 d-none d-md-block full-img p-3" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.4) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Inside_view/800.png')">
  					<div class="row">
  						<div class="col-md-6 text-white">
  							<h2>Hours:</h2>
- 							<p class="lead">Mon: <%= @hours["mon"] %></p>
- 							<p class="lead">Tues: <%= @hours["tues"] %></p>
- 							<p class="lead">Wed: <%= @hours["wed"]%></p>
- 							<p class="lead">Thurs: <%= @hours["thurs"]%></p>
- 							<p class="lead">Fri: <%= @hours["fri"]%></p>
- 							<p class="lead">Sat: <%= @hours["sat"]%></p>
- 							<p class="lead">Sun: <%= @hours["sun"]%></p>
+ 							<p class="lead">Seasonal Hours:<br>
+							8 AM -5 PM  Monday-Sunday <br>
+							8-4:45 Gas Docks <br>	<br>		 
+							Peak Season:<br> (Memorial-Labor Day)<br>
+							9-7 Monday-Sunday <br>
+							9-6:45 Gas Docks</p>
  						</div>
  						<div class="col-md-6 text-right text-white">
 							<h2>Amenities:</h2>
@@ -58,12 +56,13 @@
 					<h1 class="display-4 text-white"><br><br>Download<br>Map</h1>
  					<!-- <a href="/map"><span></span></a> -->
  				</a>
- 				<div class="col-lg-5 d-none d-lg-block text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
+ 				<div class="col-lg-5 d-none d-lg-block text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.4) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
  					<div class="py-5 container-fluid">
 			 			<div class="row">
 			 				<div class="col-md-8 mx-auto"> 
 			 					<h1 class="display-4 text-white">Today's Gas Price:<br></h1>
 			 					<h1 class="display-4 text-white">$<%= @gas_price %></h1>
+			 					<h1 class="display-5 text-white"> 90 Octane  Non-Ethanol</h1>
 			 				</div>
 			 			</div>
 			 		</div>
@@ -75,12 +74,13 @@
 					<h1 class="display-4 text-white"><br>Download<br>Map</h1>
  					<!-- <a href="/map"><span></span></a> -->
  				</a>
- 				<div class="col-md-7 text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.01) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
+ 				<div class="col-md-7 text-center full-img vert-center m-0 p-0" style="background-image: linear-gradient(330deg, rgba(5,5,5,0.4) 5%,rgba(5,5,5,0.9) 100%), url('/imgs/Marina_Pics/Gas_dock/400.png');">
  					<div class="py-5 container-fluid">
 			 			<div class="row">
 			 				<div class="col-md-8 mx-auto"> 
 			 					<h1 class="display-4 text-white">Today's Gas Price:<br></h1>
 			 					<h1 class="display-4 text-white">$<%= @gas_price %></h1>
+			 					<h1 class="display-5 text-white"> 90 Octane  Non-Ethanol</h1>
 			 				</div>
 			 			</div>
 			 		</div>
@@ -131,18 +131,16 @@
  			</div>
  		</div>
  		<div class="row">
- 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg" width="100" alt="Card image cap">
+ 			<div class="col-lg-2"></div>
+ 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="/imgs/Marina_Pics/Al_headshot/400w.png" alt="Headshot of Manager Al">
  				<h4> <b>Al</b></h4>
  				<p>Manager</p>
  			</div>
- 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg" width="100" alt="Card image cap">
+ 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="/imgs/Marina_Pics/Matt_headshot/400w.png" alt="Headshot of Manager Matt">
  				<h4> <b>Matt</b></h4>
  				<p>Manager</p>
  			</div>
- 			<div class="col-lg-4 col-sm-12 p-4" style=""> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg" width="100">
- 				<h4> <b>Pat</b></h4>
- 				<p>Assistant Manger</p>
- 			</div>
+ 			<div class="col-lg-2"></div>
  		</div>
  	</div>
  </div>
