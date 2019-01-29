@@ -32,12 +32,12 @@ $(document).ready(function() {
   
 });
 
-var images = ['/imgs/Marina_Pics/front_diag/2000.jpg',
-	  '/imgs/Marina_Pics/Top_Down/2000.jpg',
-	  '/imgs/Marina_Pics/lake_overlook/2000.jpg',
-	  '/imgs/Marina_Pics/low_far/2000.jpg',
-	  '/imgs/Marina_Pics/side_diag/2000.jpg',
-	  '/imgs/Marina_Pics/Top_Down/2000.jpg'
+var images = ['/imgs/Marina_Pics/front_diag/2000.png',
+	  '/imgs/Marina_Pics/Top_Down/2000.png',
+	  '/imgs/Marina_Pics/lake_overlook/2000.png',
+	  '/imgs/Marina_Pics/low_far/2000.png',
+	  '/imgs/Marina_Pics/side_diag/2000.png',
+	  '/imgs/Marina_Pics/Top_Down/2000.png'
 	];
 
 var img = document.getElementById("slideshow");

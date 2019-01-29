@@ -6,26 +6,31 @@ get '/' do
   File.readlines(file).each do |line|
     @gas_price = line
   end
+  @footer=0
   erb :index
 end
 
 get '/services' do
   cache_control :public, :max_age => 31536000
+  @footer=1
   erb :services
 end
 
 get '/storage' do  
   cache_control :public, :max_age => 31536000
+  @footer=1
   erb :storage
 end
 
 get '/faq' do
   cache_control :public, :max_age => 31536000
+  @footer=1
   erb :faq
 end
 
 get '/contact' do
   cache_control :public, :max_age => 31536000
+  @footer=1
   erb :contact
 end
 
